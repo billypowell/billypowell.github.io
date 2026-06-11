@@ -1,1 +1,1 @@
-Geoscience Data Learning
+Geoscience, Data & Learning
