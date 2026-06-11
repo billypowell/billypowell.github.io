@@ -20,9 +20,8 @@
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-        
+        {% capture desc %}{% include description.md %}{% endcapture %}
+        {{ desc | markdownify }}
       </header>
       <section>
 
